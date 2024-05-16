@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello MovieController!{% endblock %}
+
+{% block body %}
+<header id="header">
+   <div class="header-content">
+    <h1>Bienvenue sur CinéArchives</h1>
+    <p>Vaste base cinématographique, trésors filmiques immortalisés en ligne.</p>
+    </div>
+</header>
+<div class="content">
+    <div class="cards">
+    <div class="card">
+      <img src="{{image}}" alt="Avatar">
+       <div class="card-content">
+       <p class="card-title">{{title}}</p>
+       <p class="card-description">{{description}}</p>
+    <p class="card-year">{{year}}</p>
+    </div>
+    </div>
+    </div>
+</div>
+<footer id="footer"></footer>
+{% endblock %}
